@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediCat! Download Page</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .download-block {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-bottom: 20px;
+            transition: transform 0.3s;
+        }
+
+        .download-block:hover {
+            transform: scale(1.05);
+        }
+      h2 { display: inline }
+    </style>
+  <a href="Medicat.USB.v21.12.torrent" download id="download" hidden></a>
+</head>
+<body>
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+
+            <!-- Magnet Link Block -->
+            <div class="download-block" onclick="location.href='magnet:?xt=urn:btih:&dn=Medicat.USB.v21.12.iso&tr9c4ef29f81a1672becc4857ef94777dac5531e85=udp%3a%2f%2ftracker.openbittorrent.com%3a80%2fannounce&tr=udp%3a%2f%2ftracker.opentrackr.org%3a1337%2fannounce&tr=udp%3a%2f%2fpublic.popcorn-tracker.org%3a6969%2fannounce';" style="cursor:pointer;">
+
+                    <img src="https://static.vecteezy.com/system/resources/previews/012/300/217/original/magnet-icon-in-a-flat-style-png.png" alt="Magnet Icon" width="256" height="256" class="mr-2">
+                    <h2">Magnet</h2>
+                </a>
+                <p class="mt-2">Used if you want a one-click download of a torrent.</p>
+            </div>
+
+            <!-- Torrent Link Block -->
+            <div class="download-block"  onclick="document.getElementById('download').click();" style="cursor:pointer;">
+                    <img src="https://cryptologos.cc/logos/bittorrent-bttold-logo.png" alt="BitTorrent Icon" width="256" height="256" class="mr-2">
+                    <h2">Torrent</h2>
+                </a>
+                <p class="mt-2">Used for wider control of downloading a torrent. Better if you want to share the torrent with other people.</p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
